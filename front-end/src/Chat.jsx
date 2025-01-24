@@ -11,6 +11,7 @@ import MicOutlinedIcon from '@mui/icons-material/MicOutlined';
 function Chat() {
   return (
     <div className="chat">
+      
       {/* chat_header */}
       <div className="chat_header">
         <Avatar />

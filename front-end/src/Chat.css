@@ -11,6 +11,11 @@
     border-bottom: 1px solid lightgray;
 }
 
+.chat_header:hover{
+    background-color: #bbb8b8;
+}
+
+
 .chat_headerInfo{
     flex: 1;
     margin-left: 20px;
@@ -78,6 +83,7 @@
 
 .chat_footer > form > input {
     flex: 1;
+    outline-width:0 ;
     border-radius: 30px;
     padding: 10px;
     border: none;

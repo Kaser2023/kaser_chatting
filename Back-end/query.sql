@@ -1,0 +1,8 @@
+-- CREATE TABLE messages (
+--   id SERIAL PRIMARY KEY,
+--   name TEXT NOT NULL,
+--   message TEXT NOT NULL,
+--   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+-- );
+
+ALTER TABLE messages ADD COLUMN received BOOLEAN DEFAULT FALSE;
