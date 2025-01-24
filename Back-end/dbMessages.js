@@ -13,10 +13,15 @@ import mongoose from 'mongoose';
 
 // Define the message schema
 const messageSchema = new mongoose.Schema({
+  key: {
+    type: Number,
+    // required: true,
+    unique: true // Ensure the key is unique
+  },
   name: { type: String, required: true },
   message: { type: String, required: true },
   timestamp: { type: String, required: true },
-  received: { type: Boolean, required: true },
+  received: { type: Boolean, default: false }, // Default to false
 });
 
 // Create and export the model

@@ -71,8 +71,11 @@ db.once('open', () => {
       // [[ message ]] --> is a Channel on ( Pusher )
       // [[ inserted ]] --> is an Event on ( Pusher )
       pusher.trigger('messages', 'inserted', {
+        key: messageDetails.key,
         name: messageDetails.name,
         message: messageDetails.message,
+        timestamp: messageDetails.timestamp,
+        received: messageDetails.received
 
       });
 
