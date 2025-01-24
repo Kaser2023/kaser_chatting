@@ -30,6 +30,7 @@ function Chat({ messages }) {
       received: false
     });
 
+    
     setInput("");
   };
 
